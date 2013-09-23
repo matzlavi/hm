@@ -90,7 +90,7 @@
 					return ""
 				return cellvalue.$oid
 			} },
-                    {name:'status',index:'status',width:120,align:'center', editable: true, formatter:'select', edittype:'select', editoptions:{value:'PA:Pass;FA:Failed;IN:In progress'}},
+                    {name:'status',index:'status',width:120,align:'center', editable: true, formatter:'select', edittype:'select', editoptions:{value:'PA:Pass;FA:Failed;IN:In progress;NA:Not relevent;PP:Partially Passed'}},
 		    {name:'date',index:'date',width:120, align:'center', sorttype:'date', editable: true},
                     {name:'name',index:'name',editable: true, width:200, editrules:{required:true}},
 		    {name:'interview_type',index:'interview_type',width:150,align:'center',editable: true, formatter:'select',
@@ -144,7 +144,12 @@
 
 		<div name="upper_bar">
 			<header class="page-header">
-				<center><h1> Hire me </h1></center>
+				<table id="upper" class=table-striped", width="100%">
+				<tr>
+					<td><center><img src="./images/cloud.jpg"></center></td>
+					<td><h1>Cloud Solution Engineers<p><center>Hire me tool</center></h1></td>
+				</tr>
+				<table>
 			</header>
 		</div>
 
